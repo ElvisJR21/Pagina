@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvis Junior | Desarrollador Web y Diseñador</title>
+
+    <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="LOGO.ico" type="image/png">
+
+    <!-- SCRIPT INMEDIATO para prevenir parpadeo de tema -->
+    <script>
+        (function() {
+            function applyTheme(theme) { document.documentElement.setAttribute('data-theme', theme); }
+            let storedTheme = localStorage.getItem('theme');
+            if (storedTheme) { applyTheme(storedTheme); return; }
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(prefersDark ? 'dark' : 'light');
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- ============== MENÚ DE NAVEGACIÓN (NAVBAR) ============== -->
+    <!-- ============================================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">👨‍💻 Elvis Junior</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#perfil">🔥 Perfil</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#habilidades">🎨 Habilidades</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#tecnologias">🛠️ Tecnologías</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#proyectos">🚀 Proyectos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#videos">🎬 Videos</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#contacto">📩 Contacto</a> </li>
+                    <li class="nav-item ms-lg-3"> <button id="theme-toggle-btn" class="btn btn-theme"> <i class="fas fa-sun"></i> </button> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- ============== CONTENIDO PRINCIPAL ============== -->
+    <!-- ============================================= -->
+    <main class="container mt-5 pt-5">
+        
+        <!-- SECCIÓN PERFIL -->
+        <section id="perfil" class="text-center py-5 fade-in-element">
+            <h2 class="section-title">Desarrollador Frontend (UI/UX)</h2>
+            <img src="images/elvisfoto.png" alt="Foto de perfil de Elvis Junior" class="profile-img my-4">
+            <h3 class="profile-name">Elvis Junior</h3>
+            <p class="profile-bio"> 👨‍💻 Ingeniero en Sistemas y Computación | 💾 Programación | 🌐 Frontend y Backend | 🎨 Diseñador Gráfico </p>
+        </section>
+        
+        <!-- SECCIÓN HABILIDADES -->
+        <section id="habilidades" class="py-5 fade-in-element">
+            <h2 class="section-title text-center mb-5">🎨 Mis Habilidades</h2>
+            <div class="row gy-4">
+                
+                <!-- Card 1: Photoshop con icono de cámara -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card animated-card">
+                        <div class="card-body text-center">
+                            <div class="mb-3">
+                                <i class="fab fa-adobe fa-3x" style="color: #00A4E4; margin-right: 15px;"></i>
+                                <i class="fas fa-camera-retro fa-3x" style="color: var(--text-color-secondary);"></i>
+                            </div>
+                            <h5 class="card-title">Adobe Photoshop</h5>
+                            <p class="card-text">Creación y retoque de imágenes, mockups y prototipos visuales para interfaces de usuario.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Illustrator -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card animated-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-pen-nib fa-3x mb-3" style="color: #FF9A00;"></i>
+                            <h5 class="card-title">Adobe Illustrator</h5>
+                            <p class="card-text">Diseño de logotipos, iconografía y gráficos vectoriales escalables para proyectos web y de marca.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: After Effects -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card animated-card">
+                        <div class="card-body text-center">
+                             <i class="fas fa-film fa-3x mb-3" style="color: #9999FF;"></i>
+                            <h5 class="card-title">Adobe After Effects</h5>
+                            <p class="card-text">Creación de animaciones de interfaz (microinteracciones) y motion graphics para videos y web.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN TECNOLOGÍAS -->
+        <section id="tecnologias" class="py-5 text-center fade-in-element">
+            <h2 class="section-title mb-5">💻 Stack Tecnológico</h2>
+            <div class="tech-icons">
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+                <i class="fab fa-js-square" title="JavaScript"></i>
+                <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            </div>
+        </section>
+        
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos" class="py-5 fade-in-element">
+            <h2 class="section-title text-center mb-5">🚀 Proyectos</h2>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6"><div class="card animated-card"><div class="card-img-container"><img src="https://dummyimage.com/600x400/333/fff&text=Proyecto+1" class="card-img-top" alt="Imagen del proyecto 1"><div class="card-icon-overlay"><i class="fas fa-search"></i></div></div><div class="card-body text-center"><p class="card-text">Descripción breve de este increíble proyecto.</p><a href="#" class="btn btn-primary">🔍 Ver</a></div></div></div>
+                <div class="col-lg-4 col-md-6"><div class="card animated-card"><div class="card-img-container"><img src="https://dummyimage.com/600x400/333/fff&text=Proyecto+2" class="card-img-top" alt="Imagen del proyecto 2"><div class="card-icon-overlay"><i class="fas fa-search"></i></div></div><div class="card-body text-center"><p class="card-text">Descripción breve de este increíble proyecto.</p><a href="#" class="btn btn-primary">🔍 Ver</a></div></div></div>
+                <div class="col-lg-4 col-md-6"><div class="card animated-card"><div class="card-img-container"><img src="https://dummyimage.com/600x400/333/fff&text=Proyecto+3" class="card-img-top" alt="Imagen del proyecto 3"><div class="card-icon-overlay"><i class="fas fa-search"></i></div></div><div class="card-body text-center"><p class="card-text">Descripción breve de este increíble proyecto.</p><a href="#" class="btn btn-primary">🔍 Ver</a></div></div></div>
+            </div>
+        </section>
+        
+        <!-- SECCIÓN VIDEOS -->
+        <section id="videos" class="py-5 fade-in-element">
+            <h2 class="section-title text-center mb-5">🎬 Videos</h2>
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6"><div class="card animated-card"><div class="card-body"><h5 class="card-title">📌 Curso Completo de Photoshop</h5><div class="card-video-container"><div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/SU9CvRsECVQ?si=4CKtZGhcX1TiR_cL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="card-icon-overlay"><i class="fas fa-play"></i></div></div><p class="card-text mt-3">Un tutorial completo sobre Photoshop.</p></div></div></div>
+                <div class="col-lg-4 col-md-6"><div class="card animated-card"><div class="card-body"><h5 class="card-title">📌 Animaciones CSS</h5><div class="card-video-container"><div class="ratio ratio-16x9"><iframe width="560" height="315" src="https://www.youtube.com/embed/8Jh2K3tq5n0?si=xcZxD28JdLGxyOjy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="card-icon-overlay"><i class="fas fa-play"></i></div></div><p class="card-text mt-3">Explorando el poder de las animaciones nativas.</p></div></div></div>
+                <div class="col-lg-4 col-md-6"><div class="card animated-card"><div class="card-body"><h5 class="card-title">📌 Introducción a JS</h5><div class="card-video-container"><div class="ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/Q33KBiDriJY" title="Video" frameborder="0" allowfullscreen></iframe></div><div class="card-icon-overlay"><i class="fas fa-play"></i></div></div><p class="card-text mt-3">Conceptos básicos de JavaScript para empezar.</p></div></div></div>
+            </div>
+        </section>
+        
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="py-5 fade-in-element">
+            <h2 class="section-title text-center mb-4">📩 Contacto</h2>
+            <div class="row"><div class="col-lg-6 mx-auto"><form><div class="mb-3"><label for="name" class="form-label">Nombre</label><input type="text" class="form-control" id="name" required></div><div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" class="form-control" id="email" required></div><div class="mb-3"><label for="message" class="form-label">Mensaje</label><textarea class="form-control" id="message" rows="4" required></textarea></div><div class="text-center"><button type="submit" class="btn btn-primary">Enviar Mensaje</button></div></form></div></div>
+        </section>
+
+    </main>
+
+    <!-- ============================================= -->
+    <!-- ============== FOOTER (PIE DE PÁGINA) ============== -->
+    <!-- ============================================= -->
+    <footer class="text-center py-4 fade-in-element">
+        <div class="container">
+            <div class="social-icons mb-2"><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a> <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a> <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div>
+            <p>© 2024 Elvis Junior. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap y nuestro JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script/script.js"></script>
+</body>
+</html>
