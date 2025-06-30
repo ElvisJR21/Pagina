@@ -288,7 +288,7 @@ footer .social-icons a:hover {
 
 /* 10. ANIMACIÓN DE SCROLL (Fade In) */
 .fade-in-element {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(40px);
     transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo);
 }
